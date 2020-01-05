@@ -1,0 +1,70 @@
+.template-button {
+  width: 30%;
+  font-family: inherit;
+  font-size: 1.3rem;
+  color: $color-dark-grey;
+  @include button($bg-color: $color-yellow, $bd-color: $color-tomato);
+  position: relative;
+
+  &:hover {
+    background-color: $color-gold;
+  }
+
+  &__popup-text {
+    width: 250%;
+    font-size: 1.3rem;
+    background-color: $color-sky-blue;
+    border-radius: .5rem;
+    padding: .5rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-width: 15px;
+      border-style: solid;
+      border-color: transparent transparent $color-sky-blue transparent;
+      bottom: 100%;
+    }
+
+    &--left {
+      top: 150%;
+      left: 0;
+
+      &::after {
+        left: 10%;
+      }
+    }
+
+    &--center {
+      top: 150%;
+      left: -50%;
+
+      &::after {
+        left: 35%;
+      }
+    }
+
+    &--right {
+      top: 150%;
+      right: 0;
+
+      &::after {
+        right: 10%;
+      }
+    }
+  }
+
+  &:hover &__popup-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__duration {
+    display: block;
+  }
+}

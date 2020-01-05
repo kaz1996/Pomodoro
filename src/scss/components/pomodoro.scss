@@ -1,0 +1,13 @@
+.pomodoro {
+  width: 20rem;
+  height: 20rem;
+  @include centered-flex();
+  background-color: $color-tomato;
+  border: .1rem solid $color-light-green;
+  border-radius: 50%;
+
+  &__time {
+    font-size: 3.5rem;
+    color: $color-white;
+  }
+}

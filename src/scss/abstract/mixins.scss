@@ -1,0 +1,35 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button(
+  $bg-color: white, $bd-radius: .5rem, $shadow: (.2rem .2rem .3rem $color-black), $bd-color: $color-black) {
+  background-color: $bg-color;
+  border-radius: $bd-radius;
+  box-shadow: $shadow;
+  border: .2rem solid $bd-color;
+  cursor: pointer;
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

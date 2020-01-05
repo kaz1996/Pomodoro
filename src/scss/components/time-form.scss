@@ -1,0 +1,20 @@
+.time-form {
+  width: 100%;
+  @include centered-flex();
+
+  &__input-block {
+    margin-right: 1rem;
+  }
+
+  &__button {
+    width: 15%;
+    font-weight: 900;
+    @include button($bd-color: $color-grey);
+    margin-left: 1rem;
+    align-self: flex-end;
+
+    &:hover {
+      background-color: $color-light-grey;
+    }
+  }
+}

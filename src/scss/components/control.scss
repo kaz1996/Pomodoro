@@ -1,0 +1,16 @@
+.control {
+  width: 35%;
+  @include flex-space-around();
+
+  &__button {
+    @include button($shadow: none, $bd-color: transparent);
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__button:hover {
+    color: $color-red;
+  }
+}

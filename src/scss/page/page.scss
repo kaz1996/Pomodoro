@@ -1,0 +1,18 @@
+.page {
+  &__inner {
+    height: 100%;
+    @include flex-column();
+  }
+
+  &__header {
+    margin: 0;
+  }
+
+  &__main {
+    flex: 1;
+  }
+
+  &__footer {
+    padding: 1.5rem 0;
+  }
+}

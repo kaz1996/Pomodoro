@@ -1,0 +1,8 @@
+.timer-templates {
+  width: 100%;
+  @include flex-space-around();
+
+  &__button {
+    padding: .5rem 1rem;
+  }
+}

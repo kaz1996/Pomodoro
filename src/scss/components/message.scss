@@ -1,0 +1,9 @@
+.message {
+  display: flex;
+  align-items: center;
+  
+  &__text {
+    font-size: 3rem;
+    color: $color-tomato;
+  }
+}

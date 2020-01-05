@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  background-color: $color-sky-blue;
+  
+  &__copyright {
+    text-align: center;
+    margin: 0;
+    opacity: .6;
+  }
+}
